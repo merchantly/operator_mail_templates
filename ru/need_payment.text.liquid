@@ -1,0 +1,14 @@
+Здравствуйте, {{member_name}}!
+
+Необходимо произвести оплату "{{invoice_title}}"
+
+Текущий баланс: {{account_amount}}
+
+Сумма оплаты: {{invoice_amount}}
+
+Оплатить можно по ссылке {{system_invoice_url}} {{system_invoice_url}}
+
+{% if paid_to_date %}
+
+Обcлуживание оплачено до: {{paid_to_date}}
+{% endif %}

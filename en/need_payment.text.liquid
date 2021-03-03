@@ -1,0 +1,14 @@
+Hello {{member_name}}! 
+
+You must pay "{{invoice_title}}"
+
+Current balance: {{account_amount}}
+
+Payment amount: {{invoice_amount}}
+
+You can pay by the link {{system_invoice_url}} {{system_invoice_url}}
+
+{% if paid_to_date %}
+
+Service paid to: {{paid_to_date}}
+{% endif %}
